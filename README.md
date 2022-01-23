@@ -20,18 +20,19 @@ Healthy recuoe website with responsive design. Includes such pages:
 **Planning:**
 Prototypes for each page created with Adobe XD tools
 
--Home:
-![](/img/home-page.png)
+Home:
 
--Recipe:
-![](/img/recipe-page.png)
+  ![](/img/home-page.png)
 
--Categories:
-![](/img/categories-page.png)
+Recipe:
+  ![](/img/recipe-page.png)
 
--Recipes for category:
-![](img/recipes-for-category-page.png)
+Categories:
+  ![](/img/categories-page.png)
 
--About:
-![](img/about-page.png)
+Recipes for category:
+  ![](img/recipes-for-category-page.png)
+
+About:
+  ![](img/about-page.png)
   
