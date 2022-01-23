@@ -25,14 +25,18 @@ Home:
   ![](/img/home-page.png)
 
 Recipe:
+
   ![](/img/recipe-page.png)
 
 Categories:
+
   ![](/img/categories-page.png)
 
 Recipes for category:
+
   ![](img/recipes-for-category-page.png)
 
 About:
+
   ![](img/about-page.png)
   
