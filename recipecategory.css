@@ -1,0 +1,23 @@
+.title{
+    text-align:center;
+    padding: 25px 0px;
+}
+.title p{
+    font-size: 18px;
+}
+.card-body{
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
+}
+.card{
+    margin: 20px 10px;
+}
+.card-body a{
+    color: #6e4952;
+    font-size: 15px;
+    margin-top: auto;
+    font-weight: 600;
+}
+.card-body a:hover{
+    color: #a37f88;
+    text-decoration: none;
+}

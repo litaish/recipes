@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="recipe_category.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <title>Choose your category</title>
+</head>
+
+<body>
+    <!---TOP NAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-custom sticky-top">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+            <!--HAMBURGER ICON-->
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <div class="container-fluid custom-nav-1">
+                <a class="navbar-brand">
+                    <div>
+                        <img src="img/healthycheflogo.png" width="250" height="auto">
+                    </div>
+                </a>
+                <div class="d-flex custom-nav-1" style="padding-right: 4%;">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text" href="Recipestartpage.html">Home</a>
+                        <!--# MAKES IT CLICKABLE-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown navbar-collapse">
+                        <a class="nav-link navbar-text dropdown-toggle" data-toggle="dropdown"
+                            data-target="#dropdown_target" href="#">
+                            Categories
+                            <span class="caret"></span> <!-- CARET ADDS ARROW NEXT TO LINK-->
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown_target">
+                            <a class="dropdown-item" href="./recipecategory.html">Salads</a>
+                            <!--DROPDOWN ITEMS-->
+                            <div class="dropdown-divider"></div>
+                            <!--COSMETIC DIVIDER-->
+                            <a class="dropdown-item" href="./recipecategory.html">Desert</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./recipecategory.html">Vegan</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./recipe_category.html">View All</a>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-----CAROUSEL-->
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!---global parent for all-->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <!---0 - first one, active is the first one to start-->
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <!---Wrap class-->
+            <div class="carousel-item active">
+                <div class="overlay-image" style="background-image: url(img/recipes/chickenpasta.jpg);"></div>
+                <!---passimg img directory through style-->
+                <div class="container">
+                    <h1>Fresh salads</h1>
+                    <h4>
+                        Explore recipes that use fresh ingredients to make delicious salads! Salads are the best way 
+                        to showcase vibrant, in-season produce fruits and veggies that are so good on their own that you 
+                        don't need much to make them into a delicious meal! 
+                    </h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!---2nd wont be active-->
+                <div class="overlay-image" style="background-image: url(img/categories/vegancarousel.jpg);"></div>
+                <div class="container">
+                    <h1>Vegan food</h1>
+                    <h4>
+                        Whether you’re trying to eat less meat, pack your meals with more produce, or go completely 
+                        meat- and dairy-free, the idea of making vegan meals can be seriously daunting.
+                        So try out new things - try out some vegan recipes, that taste exactly like your 
+                        favorite non-vegan counterparts!
+                    </h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!---2nd wont be active-->
+                <div class="overlay-image" style="background-image: url(img/categories/dessertcarousel.jpg);"></div>
+                <div class="container">
+                    <h1>Healthy desserts</h1>
+                    <h4>
+                        Check out our healthy dessert recipes, that will not ruin your diet! 
+                        Many quick, easy and delicious options to pick from.
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+            <!---makes sure it takes us to the previous slide-->
+            <span class="sr-only">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+            <!---makes sure it takes us to the next slide-->
+            <span class="sr-only">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+    <!---CATEGORY CARDS-->
+    <div class="container-fluid pt-5 pb-5">
+        <div class="row text-center">
+            <div class="col-lg-4">
+                <h3>VEGAN</h3>
+                <hr class="hr-light">
+                
+                <img src="img/categories/vegan.jpg" class="img-thumbnail shadow bg-white rounded" onclick="location.href='./recipecategory.html'">
+            </div>
+            <div class="col-lg-4">
+                <h3>DESSERT</h3>
+                <hr class="hr-light">
+                
+                <img src="img/categories/dessert.jpg" class="img-thumbnail shadow bg-white rounded" onclick="location.href='./recipecategory.html'">
+            </div>
+            <div class="col-lg-4">
+                <h3>SALADS</h3>
+                <hr class="hr-light">
+                
+                <img src="img/categories/salad.jpg" class="img-thumbnail shadow bg-white rounded" onclick="location.href='./recipecategory.html'")">
+            </div>
+        </div>
+    </div>
+ <!---FOOTER-->
+ <footer class="custom-footer text-center text-white">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-white" href="google.com">HealthyChef.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+    <script src="recipe_category.js"></script>
+</body>
+
+</html>

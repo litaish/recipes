@@ -1,0 +1,176 @@
+body{
+    margin:0;
+    padding:0; 
+    /* font-family: 'Montserrat', sans-serif; */
+    background-color: #f5f5f5;
+}
+html{
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+li {
+    list-style-type: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .custom-nav-1 {
+        flex-direction: column !important;
+        padding: 0;
+    }
+}
+.navbar-custom{
+    background-color: #6e4952;
+    display: flex !important;
+    justify-content: space-between !important;
+
+
+}
+.navbar-logo-resize{
+    width: auto;
+    height: auto;
+    
+}
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text{
+    color: whitesmoke;
+}
+.navbar-custom .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245,245,245, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    border-color: white;
+}
+hr{
+    width: 30%;
+}
+.parallax{
+    background-image: url("img/parallax.jpg");
+    opacity: 0.8;
+    height: 50em;
+    background-attachment: fixed;
+    background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 20em;
+}
+.parallax-caption{
+    color: whitesmoke;
+    position: relative;
+    font-size: 5vw;
+
+    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+}
+.parallax-caption-small{
+    color: whitesmoke;
+    font-size: 2vw;
+    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+}
+.scroll-down{
+    position: absolute;
+    bottom: 8rem;
+    left: 50%;
+    transform:translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mouse{
+    width: 2.5rem;
+    height: 5rem;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    margin-bottom: .5rem;
+    display: flex;
+}
+.mouse span{
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    animation: move-wheel 1s linear infinite;
+}
+.arrow span{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid transparent;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    transform: rotate(45deg);
+    animation: arrow-down .5s alternate infinite;
+}
+@keyframes move-wheel {
+    0%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(1rem);
+    }
+}
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+        
+    }
+    25%{
+        opacity: .25;
+        
+    }
+    50%{
+        opacity: .5;
+        
+    }
+    75%{
+        opacity: .75;
+
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+
+.custom-footer{
+    background-color: #6e4952;
+}
+.title{
+    text-align:center;
+    padding: 25px 0px;
+}
+.title p{
+    font-size: 18px;
+}
+.card-body{
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.2);
+}
+.card{
+    margin: 20px 10px;
+}
+.card-body a{
+    color: #6e4952;
+    font-size: 15px;
+    margin-top: auto;
+    font-weight: 600;
+}
+.card-body a:hover{
+    color: #a37f88;
+    text-decoration: none;
+}
+/*Make welcome text disappear on media query*/
+@media only screen and (max-width: 550px) {
+    .parallax-caption{
+        font-size: 8vw;
+    }
+    .parallax-caption-small{
+        display:none;
+    }
+    .scroll-down{
+        bottom: 2rem;
+    }
+  }
+

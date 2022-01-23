@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="seperatecategory.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./seperatecategory.css">
+
+    <title>Choose your category</title>
+</head>
+
+<body>
+    <!---TOP NAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-custom sticky-top">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+            <!--HAMBURGER ICON-->
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <div class="container-fluid custom-nav-1">
+                <a class="navbar-brand">
+                    <div>
+                        <img src="img/healthycheflogo.png" width="250" height="auto">
+                    </div>
+                </a>
+                <div class="d-flex custom-nav-1" style="padding-right: 4%;">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text" href="Recipestartpage.html">Home</a>
+                        <!--# MAKES IT CLICKABLE-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown navbar-collapse">
+                        <a class="nav-link navbar-text dropdown-toggle" data-toggle="dropdown"
+                            data-target="#dropdown_target" href="#">
+                            Categories
+                            <span class="caret"></span> <!-- CARET ADDS ARROW NEXT TO LINK-->
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown_target">
+                            <a class="dropdown-item" href="./recipecategory.html">Salads</a>
+                            <!--DROPDOWN ITEMS-->
+                            <div class="dropdown-divider"></div>
+                            <!--COSMETIC DIVIDER-->
+                            <a class="dropdown-item" href="./recipecategory.html">Desert</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./recipecategory.html">Vegan</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./recipe_category.html">View All</a>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-----CAROUSEL-->
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!---global parent for all-->
+        <div class="carousel-inner">
+            <!---Wrap class-->
+            <div class="carousel-item active">
+                <div id="bg_Image" class="overlay-image" style="background-image: url(img/recipes/chickenpasta.jpg);"> <!---BACKGROUND IMAGE FOR-->
+                </div>
+                <!---passimg img directory through style-->
+                <div class="container">
+                    <h1 id="category_name"></h1>
+                    <h4 id="category_description"></h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!---CATEGORY CARDS-->
+    <div class="container-fluid pt-5">
+        <div class="row" id="containerList" style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <!----DYNAMIC CARD GOES HERE-->
+            <div class="col-md-4">
+                <div class="card text-center" style="height: 50rem;">
+                    <img src="img/recipes/burger.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">VEGAN BURGER</h5>
+                        <p class="card-text">
+                            Recreate a vegan friendly burger using plant based ingredients, making it taste like a
+                            real burger
+                        </p>
+                        <a href="./recipepage.html">CHECK IT OUT!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center" style="height: 50rem;">
+                    <img src="img/recipes/pancakes.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">VEGAN PANCAKES</h5>
+                        <p class="card-text">
+                            Spice up your morning with some delicious vegan pancakes, using healthy ingredients.
+                        </p>
+                        <a href="./recipepage.html">CHECK IT OUT!</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card text-center" style="height: 50rem;">
+                    <img src="img/recipes/pie.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">APPLE PIE</h5>
+                        <p class="card-text">
+                            This pie has a delicious apple filling. Best made with homegrown apples
+                        </p>
+                        <a href="./recipepage.html">CHECK IT OUT!</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!---FOOTER-->
+ <footer class="custom-footer text-center text-white">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-white" href="google.com">HealthyChef.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+    <script src="./recipecategory.js"></script>
+</body>
+
+</html>
